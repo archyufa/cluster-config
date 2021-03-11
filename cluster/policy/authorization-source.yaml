@@ -1,0 +1,10 @@
+apiVersion: constraints.gatekeeper.sh/v1beta1
+kind: SourceNotAllAuthz
+metadata:
+  name: sourcenotall-authz-constraint
+spec:
+  enforcementAction: dryrun
+  match:
+    kinds:
+      - apiGroups: ["security.istio.io"]
+        kinds: ["AuthorizationPolicy"]
