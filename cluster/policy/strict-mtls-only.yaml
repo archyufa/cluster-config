@@ -8,4 +8,4 @@ spec:
     kinds:
       - apiGroups: ["authentication.istio.io"]
         kinds: ["Policy"]
-    namespaces: ["default", "stg","onlineboutique"]
+    namespaces: ["default", "stg"]
