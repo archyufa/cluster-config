@@ -3,12 +3,12 @@ kind: K8sAllowedRepos
 metadata:
   name: allowed-repos
 spec:
-#  enforcementAction: dryrun
+ enforcementAction: dryrun
   match:
     kinds:
       - apiGroups: [""]
         kinds: ["Pod"]
-    excludedNamespaces: ["dev"]
+    excludedNamespaces: ["dev", "onlineboutique"]
   parameters:
     repos:
       - "gcr.io"
