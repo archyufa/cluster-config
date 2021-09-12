@@ -1,15 +1,15 @@
-# apiVersion: constraints.gatekeeper.sh/v1beta1
-# kind: K8sAllowedRepos
-# metadata:
-#   name: allowed-repos
-# spec:
-#   enforcementAction: dryrun
-#   match:
-#     kinds:
-#       - apiGroups: [""]
-#         kinds: ["Pod"]
-#     excludedNamespaces: ["onlineboutique"]
-#   parameters:
-#     repos:
-#       - "gcr.io"
-#       - "gke.gcr.io"
+apiVersion: constraints.gatekeeper.sh/v1beta1
+kind: K8sAllowedRepos
+metadata:
+  name: allowed-repos
+spec:
+  enforcementAction: dryrun
+  match:
+    kinds:
+      - apiGroups: [""]
+        kinds: ["Pod"]
+    excludedNamespaces: ["onlineboutique"]
+  parameters:
+    repos:
+      - "gcr.io"
+      - "gke.gcr.io"
