@@ -13,4 +13,3 @@ spec:
     repos:
       - "gcr.io"
       - "gke.gcr.io"
-      - "mcr.microsoft.com"
